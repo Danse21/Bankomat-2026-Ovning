@@ -1,4 +1,5 @@
-﻿using MyApp; // Imports the MyApp namespace so the classes can be used
+﻿// Imports the MyApp namespace so the classes can be used
+using MyApp;
 
 Account account = new Account(9000); // Creates an account with 9000 kronor
 Card card = new Card("0123", account); // Creates a card with PIN 0123 connected to the account
