@@ -14,7 +14,7 @@ public class CardTest // Defines the test class for Card
         Assert.True(card.CheckPin("0123")); // Checks that the correct PIN returns true
     }
 
-    [Fact] // Marks this method as a test
+    [Fact]
     public void CheckPin_Returns_False_For_Wrong_Pin() // Tests that the wrong PIN is rejected
     {
         Account account = new Account(9000); // Creates an account

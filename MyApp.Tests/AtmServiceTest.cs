@@ -17,7 +17,7 @@ public class AtmServiceTest // Defines the test class for AtmService
         Assert.False(atm.EnterPin("1234")); // Checks that a wrong PIN returns false
     }
 
-    [Fact] // Marks this method as a test
+    [Fact]
     public void EnterPin_Returns_True_For_Correct_Pin() // Tests that the correct PIN is accepted
     {
         Account account = new Account(9000); // Creates an account with 9000
@@ -59,7 +59,7 @@ public class AtmServiceTest // Defines the test class for AtmService
         Assert.Equal(6000, atm.AtmBalance); // Checks that the ATM balance became 6000
     }
 
-    [Fact] // Marks this method as a test
+    [Fact]
     public void Withdraw_Fails_When_Atm_Has_Too_Little_Money() // Tests failed withdrawal because the ATM lacks cash
     {
         Account account = new Account(9000); // Creates an account with 9000
@@ -76,7 +76,7 @@ public class AtmServiceTest // Defines the test class for AtmService
         Assert.Equal(6000, atm.AtmBalance); // Checks that the ATM balance did not change
     }
 
-    [Fact] // Marks this method as a test
+    [Fact]
     public void Withdraw_Fails_When_Account_Has_Too_Little_Money() // Tests failed withdrawal because the account lacks money
     {
         Account account = new Account(4000); // Creates an account with only 4000
