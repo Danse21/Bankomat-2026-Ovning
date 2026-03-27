@@ -31,21 +31,6 @@ Unit tests verify that the ATM behaves correctly in both successful and failure 
 
 ---
 
-# Project Structure
-
-MySolution
-│
-├── MyApp
-│ ├── Program.cs
-│ ├── Account.cs
-│ ├── Card.cs
-│ └── AtmService.cs
-│
-└── MyApp.Tests
-├── AccountTest.cs
-├── CardTest.cs
-└── AtmServiceTest.cs
-
 ### MyApp
 
 Contains the main ATM logic.
@@ -98,33 +83,23 @@ The tests verify these behaviors automatically.
 
 ### 1. Clone the repository
 
-git clone https://github.com/YOUR\_USERNAME/YOUR\_REPOSITORY.git
+git clone git@github.com:Danse21/Bankomat-2026-Ovning.git
 
 ### 2. Go to the project folder
 
-cd YOUR_REPOSITORY
+cd YOUR_PROJECT_FOLDER
 
 ### 3. Build the solution
 
-dotnet build
+`dotnet build`
 
 ### 4. Run the unit tests
 
-dotnet test
+`dotnet test`
 
 You should see output similar to:
 
 Passed! 16 tests
-
----
-
-# Running the Console Demo
-
-You can also run the console example:
-
-dotnet run --project MyApp
-
-This will simulate a small ATM interaction in the console.
 
 ---
 
@@ -134,18 +109,6 @@ This will simulate a small ATM interaction in the console.
 - **.NET**
 - **xUnit**
 - **dotnet CLI**
-
----
-
-# Learning Goals
-
-This project demonstrates:
-
-- Object-oriented design in C#
-- Separation of responsibilities between classes
-- Writing unit tests with xUnit
-- Testing both successful and failing scenarios
-- Structuring a .NET solution with multiple projects
 
 ---
 
@@ -161,6 +124,4 @@ Future improvements could include:
 
 ---
 
-# Author
-
-Created as part of a **software testing and integration course assignment**.
+Created as part of **Testing, Integration och Leverans kurs exercises**.
